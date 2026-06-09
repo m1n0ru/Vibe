@@ -1,0 +1,23 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.day-cell {
+  user-select: none;
+  transition: background-color 0.1s;
+}
+
+.day-cell:hover {
+  filter: brightness(0.95);
+}
